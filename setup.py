@@ -6,7 +6,7 @@ setup(
     packages=['pdflib'],
     include_package_data=True,
     description='pretty printing of PDFs from Jupyter notebooks',
-    url='https://github.com/inscopix/astellas-ACC',
+    url='https://github.com/sg-s/pdflib',
     author='Srinivas Gorur-Shandilya',
     author_email='code@srinivas.gs',
 )
