@@ -25,7 +25,7 @@ def make(notebook_name, classname="article"):
 
     # convert to latex using jupyter notebook
     # subprocess doesn't work for inscrutable reasons and
-    # i can't figure out why
+    # I can't figure out why
 
     eval_str = 'jupyter nbconvert --to latex --no-input --output-dir '
     eval_str = eval_str + pdf_dir
@@ -104,4 +104,18 @@ def make(notebook_name, classname="article"):
     os.chdir(pdf_dir)
     os.system('pdflatex ' + in_file)
 
-    # clean up temporary files
+    # clean up
+    clean(pdf_dir)
+
+
+def clean(folder_name):
+
+    files = os.listdir(folder_name)
+
+    for item in files:
+        if item.endswith(".aux"):
+            os.remove(os.path.join(dir_name, item))
+        if item.endswith(".log"):
+            os.remove(os.path.join(dir_name, item))
+        if item.endswith(".out"):
+            os.remove(os.path.join(dir_name, item))

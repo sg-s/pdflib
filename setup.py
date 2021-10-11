@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='pdflib',
-    version='0.1.2',
+    version='0.2.0',
     packages=['pdflib'],
     include_package_data=True,
     description='pretty printing of PDFs from Jupyter notebooks',
