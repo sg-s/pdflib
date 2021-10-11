@@ -28,6 +28,12 @@ setup(
 
 ## Usage
 
+Make sure you import this using:
+
+```python
+from pdflib import pdflib
+```
+
 At the bottom of a Jupyter notebook, add the following:
 
 ```python
