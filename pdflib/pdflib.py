@@ -1,3 +1,8 @@
+"""
+pdflib.make allows pretty printing of PDFs from Jupyter notebooks
+
+"""
+
 import os
 
 
