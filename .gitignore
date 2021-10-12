@@ -1,4 +1,5 @@
 pdfs/
+*.ipynb
 
 *DS_Store
 *.sublime-project
